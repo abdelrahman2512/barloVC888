@@ -66,8 +66,6 @@ app = app
 
 userbot = userbot
 
-aiohttpsession = ClientSession()
-
 initialize()
 
 print("[INFO]: INITIALIZING DATABASE")
