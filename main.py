@@ -144,7 +144,6 @@ app = Client(
 
 )
 
-aiohttpsession = ClientSession()
 
 client = Client(config.SESSION_NAME, config.API_ID, config.API_HASH)
 
