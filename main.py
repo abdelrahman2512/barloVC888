@@ -195,12 +195,19 @@ init_db()
 
 print("[INFO]: STARTING BOT CLIENT")
 
-app.start()
+with app:
+    if __name__=="__main__":
+        print("done")
+    idle()
+    
 
 print("[INFO]: STARTING ASSISTANT CLIENT")
 
-client.start()
-
+with client:
+    if __name__=="__main__":
+        print("done")
+    idle()
+    
 print("[INFO]: LOADING BOT/ASSISTANT PROFILE INFO")
 
 all_info(app, client)
